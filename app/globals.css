@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #000000 100%);
+  color: white;
+  min-height: 100vh;
+}
+
+:root {
+  --beast-primary: #ff006e;
+  --beast-secondary: #8338ec;
+  --beast-accent: #ffbe0b;
+  --beast-success: #06ffa5;
+  --beast-danger: #ff3333;
+  --beast-dark: #000000;
+  --beast-gray: #1a1a1a;
+  --beast-light-gray: #333333;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--beast-gray);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--beast-primary);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--beast-secondary);
+}
+
+/* Glow effects */
+.glow-primary {
+  box-shadow: 0 0 20px rgba(255, 0, 110, 0.3);
+}
+
+.glow-secondary {
+  box-shadow: 0 0 20px rgba(131, 56, 236, 0.3);
+}
+
+/* Beast button styles */
+.btn-beast {
+  background: linear-gradient(45deg, var(--beast-primary), var(--beast-secondary));
+  border: none;
+  border-radius: 12px;
+  padding: 12px 24px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  transform: translateY(0);
+}
+
+.btn-beast:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 0, 110, 0.4);
+}
+
+/* Vibe animations */
+@keyframes vibeFloat {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.vibe-float {
+  animation: vibeFloat 3s ease-in-out infinite;
+}
+
+@keyframes beastGlow {
+  0%, 100% { box-shadow: 0 0 20px rgba(255, 0, 110, 0.3); }
+  50% { box-shadow: 0 0 30px rgba(131, 56, 236, 0.6); }
+}
+
+.beast-glow {
+  animation: beastGlow 2s ease-in-out infinite;
+}
