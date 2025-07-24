@@ -44,7 +44,7 @@ export default function CloudinaryUpload({ onUploadSuccess }: CloudinaryUploadPr
         uploadPreset: 'ml_default',
         sources: ['local', 'camera'],
         multiple: false,
-        folder: 'circlex_uploads',
+        folder: 'goride_uploads',
         cropping: false,
       },
       (error: any, result: any) => {
