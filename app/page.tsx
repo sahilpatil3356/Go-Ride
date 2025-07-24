@@ -7,10 +7,10 @@ export default function Home() {
     <main className="min-h-screen flex items-center justify-center bg-gray-50">
       <div className="text-center max-w-md mx-auto p-6">
         <h1 className="text-4xl font-bold text-gray-900 mb-4">
-          Welcome to Go-Ride
+          Welcome to Circle X
         </h1>
         <p className="text-lg text-gray-600 mb-8">
-          Your ride-sharing platform is ready to go!
+          Your innovative platform is ready to go!
         </p>
 
         <div className="upload-section">

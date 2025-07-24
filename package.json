@@ -1,7 +1,7 @@
 {
-  "name": "go-ride",
+  "name": "circle-x",
   "version": "1.0.0",
-  "description": "Go-Ride application",
+  "description": "Circle X application",
   "main": "index.js",
   "scripts": {
     "dev": "next dev",
