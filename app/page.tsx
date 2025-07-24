@@ -1,3 +1,5 @@
+'use client'
+
 import CloudinaryUpload from '@/components/CloudinaryUpload'
 
 export default function Home() {
